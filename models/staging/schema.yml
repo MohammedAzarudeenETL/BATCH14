@@ -2,7 +2,8 @@ version: 2
 
 sources:
     - name: datafeed_shared_schema
-      database: "{{ ('anuam')}}"
-      schema: public
+      database: "{{ ('ANAUM') }}"
+      schema: raw_schema
       tables:
-        - name: customers
+        - name: raw_customersdata
+        - name: raw_ordersdata
