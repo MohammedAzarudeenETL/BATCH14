@@ -40,3 +40,6 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+    test:
+      +store_failure: true
+      +schema: test_failures
