@@ -6,4 +6,11 @@ sources:
       schema: raw_schema
       tables:
         - name: raw_customersdata
+          columns:
+            - name: id
+              tests:
+                - unique
+                - not_null
         - name: raw_ordersdata
+        - name: stg_order
+        - name: stg_product_name
